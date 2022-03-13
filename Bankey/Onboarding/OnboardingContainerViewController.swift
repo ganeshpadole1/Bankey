@@ -71,7 +71,8 @@ class OnboardingContainerViewController: UIViewController {
     
     private func layout() {
         NSLayoutConstraint.activate([
-            
+            closeButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            closeButton.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)
         ])
     }
     
