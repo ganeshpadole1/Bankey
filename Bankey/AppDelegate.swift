@@ -30,13 +30,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        setRootViewController(onboardingContainerViewController)
+        
+        if LocalState.hasOnboarded {
+            print("Onboarding already done")
+        } else {
+            setRootViewController(onboardingContainerViewController)
+        }
     }
 }
 
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
-        print("Onboarding done")
+        LocalState.hasOnboarded = true
     }
 }
 
