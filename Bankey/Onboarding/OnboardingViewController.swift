@@ -8,46 +8,46 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-    
+
     let stackView = UIStackView()
     let imageView = UIImageView()
     let label = UILabel()
     let heroImageName: String
     let titleText: String
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         style()
         layout()
     }
-    
+
     init(heroImageView: String, titleLabel: String) {
         self.heroImageName = heroImageView
         self.titleText = titleLabel
-        
+
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension OnboardingViewController {
-    
+
     private func style() {
         view.backgroundColor = .systemBackground // ! dont forget
-        
+
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 10
-        
+
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: heroImageName)
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        
+
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.preferredFont(forTextStyle: .title3)
@@ -55,9 +55,9 @@ extension OnboardingViewController {
         label.numberOfLines = 0
         label.text = titleText
     }
-    
+
     private func layout() {
-        
+
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(label)
         view.addSubview(stackView)

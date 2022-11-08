@@ -52,7 +52,6 @@
 				93717F0B16AF20526FED6EC1 /* Pods-Bankey.debug.xcconfig */,
 				5AC4E66159D65A2C059AB208 /* Pods-Bankey.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +137,7 @@
 			buildConfigurationList = 1F53E2A82917FECA007F1A07 /* Build configuration list for PBXNativeTarget "Bankey" */;
 			buildPhases = (
 				F9D179552CCB0F93FAD50054 /* [CP] Check Pods Manifest.lock */,
+				1F80FA99291A69A1005BB484 /* ShellScript */,
 				1F53E2902917FEC6007F1A07 /* Sources */,
 				1F53E2912917FEC6007F1A07 /* Frameworks */,
 				1F53E2922917FEC6007F1A07 /* Resources */,
@@ -197,6 +197,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F80FA99291A69A1005BB484 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		F9D179552CCB0F93FAD50054 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
