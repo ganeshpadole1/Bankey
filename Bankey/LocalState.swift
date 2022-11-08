@@ -11,12 +11,12 @@ class LocalState {
     private enum Keys: String {
         case hasOnboarded
     }
-    
+
     public static var hasOnboarded: Bool {
-        get{
+        get {
             return UserDefaults.standard.bool(forKey: Keys.hasOnboarded.rawValue)
         }
-        set(newValue){
+        set(newValue) {
             UserDefaults.standard.set(newValue, forKey: Keys.hasOnboarded.rawValue)
         }
     }
