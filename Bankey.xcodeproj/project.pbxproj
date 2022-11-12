@@ -15,6 +15,8 @@
 		1F53E2A12917FECA007F1A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F53E2A02917FECA007F1A07 /* Assets.xcassets */; };
 		1F53E2A42917FECA007F1A07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F53E2A22917FECA007F1A07 /* LaunchScreen.storyboard */; };
 		1F56A66329194E4000F29129 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56A66229194E4000F29129 /* OnboardingViewController.swift */; };
+		1FFED17429201BF100CFA4A6 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFED17329201BF100CFA4A6 /* UIViewController+Utils.swift */; };
+		1FFED17629201CC400CFA4A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFED17529201CC400CFA4A6 /* MainViewController.swift */; };
 		DD33E8BE9CDB974A56D81B67 /* Pods_Bankey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9996B78F7288EFED4C01E1 /* Pods_Bankey.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		1F53E2A32917FECA007F1A07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F53E2A52917FECA007F1A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F56A66229194E4000F29129 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1FFED17329201BF100CFA4A6 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		1FFED17529201CC400CFA4A6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5AC4E66159D65A2C059AB208 /* Pods-Bankey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankey.release.xcconfig"; path = "Target Support Files/Pods-Bankey/Pods-Bankey.release.xcconfig"; sourceTree = "<group>"; };
 		93717F0B16AF20526FED6EC1 /* Pods-Bankey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankey.debug.xcconfig"; path = "Target Support Files/Pods-Bankey/Pods-Bankey.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9996B78F7288EFED4C01E1 /* Pods_Bankey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				1F307F0E291A39C40028D2A1 /* LocalState.swift */,
+				1FFED17329201BF100CFA4A6 /* UIViewController+Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -112,11 +117,12 @@
 		1F53E2962917FEC6007F1A07 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				1F53E2972917FEC6007F1A07 /* AppDelegate.swift */,
+				1FFED17529201CC400CFA4A6 /* MainViewController.swift */,
 				1F307F0D291A39880028D2A1 /* Utils */,
 				1F39818F2918039D00D1C806 /* Onboarding */,
 				1F39818A2918020B00D1C806 /* Login */,
 				1F398189291801CE00D1C806 /* Files */,
-				1F53E2972917FEC6007F1A07 /* AppDelegate.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -245,10 +251,12 @@
 			files = (
 				1F39818E2918023700D1C806 /* LoginView.swift in Sources */,
 				1F307F0F291A39C40028D2A1 /* LocalState.swift in Sources */,
+				1FFED17429201BF100CFA4A6 /* UIViewController+Utils.swift in Sources */,
 				1F39818C2918021400D1C806 /* LoginViewController.swift in Sources */,
 				1F56A66329194E4000F29129 /* OnboardingViewController.swift in Sources */,
 				1F53E2982917FEC6007F1A07 /* AppDelegate.swift in Sources */,
 				1F3981912918087F00D1C806 /* OnboardingContainerViewController.swift in Sources */,
+				1FFED17629201CC400CFA4A6 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
