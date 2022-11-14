@@ -18,6 +18,8 @@
 		1FFED17429201BF100CFA4A6 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFED17329201BF100CFA4A6 /* UIViewController+Utils.swift */; };
 		1FFED17629201CC400CFA4A6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFED17529201CC400CFA4A6 /* MainViewController.swift */; };
 		1FFED17929201FC400CFA4A6 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFED17829201FC400CFA4A6 /* AccountSummaryViewController.swift */; };
+		1FFED17C2920236C00CFA4A6 /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFED17B2920236C00CFA4A6 /* AccountSummaryHeaderView.swift */; };
+		1FFED17E2920239D00CFA4A6 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FFED17D2920239D00CFA4A6 /* AccountSummaryHeaderView.xib */; };
 		DD33E8BE9CDB974A56D81B67 /* Pods_Bankey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9996B78F7288EFED4C01E1 /* Pods_Bankey.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		1FFED17329201BF100CFA4A6 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		1FFED17529201CC400CFA4A6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1FFED17829201FC400CFA4A6 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		1FFED17B2920236C00CFA4A6 /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
+		1FFED17D2920239D00CFA4A6 /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 		5AC4E66159D65A2C059AB208 /* Pods-Bankey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankey.release.xcconfig"; path = "Target Support Files/Pods-Bankey/Pods-Bankey.release.xcconfig"; sourceTree = "<group>"; };
 		93717F0B16AF20526FED6EC1 /* Pods-Bankey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bankey.debug.xcconfig"; path = "Target Support Files/Pods-Bankey/Pods-Bankey.debug.xcconfig"; sourceTree = "<group>"; };
 		BD9996B78F7288EFED4C01E1 /* Pods_Bankey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bankey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,9 +137,19 @@
 		1FFED17729201F9600CFA4A6 /* Account Summary */ = {
 			isa = PBXGroup;
 			children = (
+				1FFED17A2920235200CFA4A6 /* Header */,
 				1FFED17829201FC400CFA4A6 /* AccountSummaryViewController.swift */,
 			);
 			path = "Account Summary";
+			sourceTree = "<group>";
+		};
+		1FFED17A2920235200CFA4A6 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1FFED17B2920236C00CFA4A6 /* AccountSummaryHeaderView.swift */,
+				1FFED17D2920239D00CFA4A6 /* AccountSummaryHeaderView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		50C19AB07CBCCA625EEF9DA9 /* Frameworks */ = {
@@ -206,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFED17E2920239D00CFA4A6 /* AccountSummaryHeaderView.xib in Resources */,
 				1F53E2A42917FECA007F1A07 /* LaunchScreen.storyboard in Resources */,
 				1F53E2A12917FECA007F1A07 /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F39818E2918023700D1C806 /* LoginView.swift in Sources */,
+				1FFED17C2920236C00CFA4A6 /* AccountSummaryHeaderView.swift in Sources */,
 				1F307F0F291A39C40028D2A1 /* LocalState.swift in Sources */,
 				1FFED17429201BF100CFA4A6 /* UIViewController+Utils.swift in Sources */,
 				1F39818C2918021400D1C806 /* LoginViewController.swift in Sources */,
